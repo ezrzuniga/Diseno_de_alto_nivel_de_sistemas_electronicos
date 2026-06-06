@@ -1,0 +1,6 @@
+g++ -std=c++20 \
+  -I$SYSTEMC_HOME/include \
+  -L$SYSTEMC_HOME/lib64 \
+  -Wl,-rpath,$SYSTEMC_HOME/lib64 \
+  -lsystemc \
+  your_file.cpp -o your_output
